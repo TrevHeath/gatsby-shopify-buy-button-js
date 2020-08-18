@@ -1,3 +1,8 @@
+console.log(
+  process.env.GATSBY_SHOPIFY_SHOP_NAME,
+  process.env.GATSBY_SHOPIFY_ACCESS_TOKEN
+)
+
 module.exports = {
   siteMetadata: {
     title: `Shopify Store`,
@@ -13,9 +18,8 @@ module.exports = {
         shopName: process.env.GATSBY_SHOPIFY_SHOP_NAME,
         accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
         verbose: true,
-        paginationSize: 250,
+        paginationSize: 150,
         includeCollections: ["shop", "content"],
-
       },
     },
     {
